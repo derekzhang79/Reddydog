@@ -10,14 +10,17 @@
 
 @interface XXStringUtils : NSObject
 
++ (NSString *)emptyString;
+
 + (BOOL)isEmpty:(NSString *)str;
 + (BOOL)isBlank:(NSString *)str;
 
-+ (NSString *)noNilStringFor:(NSString *)str;
-+ (NSString *)emptyString;
 + (NSString *)trim:(NSString *)str;
+
++ (BOOL)string:(NSString *)s1 isEqualString:(NSString *)s2;
++ (NSString *)noNilStringWithString:(NSString *)str;
+
 + (NSString *)stringEncodeWithBase64:(NSString *)str;
 + (NSString *)md5HexDigest:(NSString *)str;
-+ (BOOL)string:(NSString *)s1 isEqualString:(NSString *)s2;
 
 @end

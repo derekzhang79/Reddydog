@@ -11,7 +11,7 @@
 
 @implementation XXStringUtils
 
-+ (NSString *)noNilStringFor:(NSString *)str {
++ (NSString *)noNilStringWithString:(NSString *)str {
     if(str == nil) return @"";
     return str;
 }
